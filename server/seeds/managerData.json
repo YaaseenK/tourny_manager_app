@@ -1,0 +1,42 @@
+[
+    {
+        "gamerTag": "Big Man 1",
+        "firstName": "Max",
+        "lastName": "Williams",
+        "country": "Canada",
+        "phone": "1231231234",
+        "birthday": "02/01/1990"
+    },
+    {
+        "gamerTag": "Big Man 2",
+        "firstName": "Sam",
+        "lastName": "James",
+        "country": "Canada",
+        "phone": "1231231234",
+        "birthday": "02/01/1990"  
+    },
+    {
+        "gamerTag": "Big Man 3",
+        "firstName": "Bob",
+        "lastName": "Smith",
+        "country": "Canada",
+        "phone": "1231231234",
+        "birthday": "02/01/1990"
+    },
+    {
+        "gamerTag": "Big Man 4",
+        "firstName": "Tom",
+        "lastName": "Jones",
+        "country": "Canada",
+        "phone": "1231231234",
+        "birthday": "02/01/1990"
+    },
+    {
+        "gamerTag": "Big Man 5",
+        "firstName": "Joe",
+        "lastName": "Jackson",
+        "country": "Canada",
+        "phone": "1231231234",
+        "birthday": "02/01/1990"
+    }
+]
