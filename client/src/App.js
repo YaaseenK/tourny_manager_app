@@ -5,6 +5,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Profile from './pages/Profile';
 import ManagerDash from './pages/ManagerDash';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
 
 const client = new ApolloClient({
   uri: '/graphql',
@@ -15,8 +17,17 @@ const client = new ApolloClient({
 function App() {
   return (
     <Router>
+     <ApolloProvider client={client}>
       <div className="flex-column justify-center align-center min-100-vh bg-primary">
         <Routes>
+          <Route 
+              path="/login" 
+              element={<Login />}
+            />
+            <Route 
+              path="/signup" 
+              element={<Signup />} 
+            />
           <Route 
             path="/" 
             element={<Home />} 
@@ -31,6 +42,7 @@ function App() {
           />
         </Routes>
       </div>
+     </ApolloProvider>
     </Router>
   );
 }
