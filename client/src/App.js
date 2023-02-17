@@ -9,6 +9,17 @@ import ManagerDash from './pages/ManagerDash';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
 
+// Set up authorization link using JWT 
+const authLink = setContext((_, { headers }) => {
+  const token = localStorage.getItem('id_token');
+  return {
+    headers: {
+      ...headers,
+      authorization: token ? `Bearer ${token}` : '',
+    },
+  };
+});
+
 const client = new ApolloClient({
   uri: '/graphql',
   cache: new InMemoryCache(),
